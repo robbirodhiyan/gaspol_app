@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "e306deb5-3e15-4ad5-a15a-c021bf46f0e6",
+		"name": "PM GASPOL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21388643"
+	},
+	"item": [
+		{
+			"name": "Show Member",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzU0NzQ3NzYsImV4cCI6MTY3NTczNDM3NiwidWlkIjoiMjUiLCJuYW1hIjoiRGlhbmEgS3UiLCJyb2xlIjoiMiIsImVtYWlsIjoiZGlhbmFrdUBnbWFpbC5jb20ifQ.9PiTqtthjVNsKxmwOueu19ElqXx328kqO-HvP1n7spQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://103.179.66.114/usersapi",
+					"host": [
+						"http://103.179.66.114/usersapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Approve Member",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzUzNDMwMzUsImV4cCI6MTY3NTM0MzA5NSwidWlkIjoiMjUiLCJuYW1hIjoiRGlhbmEgS3UiLCJyb2xlIjoiMiIsImVtYWlsIjoiZGlhbmFrdUBnbWFpbC5jb20ifQ.bh3spt-VwBZVfU6uc5Fh367pdrUF2oLr4x50Uubkoas",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://103.179.66.114/userapprove",
+					"host": [
+						"http://103.179.66.114/userapprove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Approve Member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://103.179.66.114/approve/25",
+					"host": [
+						"http://103.179.66.114/approve"
+					],
+					"path": [
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Member By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://103.179.66.114/usersapi",
+					"host": [
+						"http://103.179.66.114/usersapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@gmail.com\",\r\n    \"password\" : \"admin123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://103.179.66.114/login",
+					"host": [
+						"http://103.179.66.114/login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\" : \"Whjeza\",\r\n    \"email\" : \"wezgha@gmail.com\",\r\n    \"password\" : \"weza123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://103.179.66.114/register",
+					"host": [
+						"http://103.179.66.114/register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Team",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"team\" : \"Telkom\",\r\n    \"deskripsi\" : \"Telkom Ni Bos Senggol Dong\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://103.179.66.114/createTeam",
+					"host": [
+						"http://103.179.66.114/createTeam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Team",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzU2MTA3ODIsImV4cCI6MTY3NTg3MDM4MiwidWlkIjoiMjUiLCJuYW1hIjoiRGlhbmEgS3UiLCJyb2xlIjoiMiIsImVtYWlsIjoiZGlhbmFrdUBnbWFpbC5jb20ifQ.f4KrzI41NHHq9sjurc4OWzUKrSGS-xY8GYN77Cu4Vhw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://103.179.66.114/listTeam",
+					"host": [
+						"http://103.179.66.114/listTeam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Team",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzU2MTA3ODIsImV4cCI6MTY3NTg3MDM4MiwidWlkIjoiMjUiLCJuYW1hIjoiRGlhbmEgS3UiLCJyb2xlIjoiMiIsImVtYWlsIjoiZGlhbmFrdUBnbWFpbC5jb20ifQ.f4KrzI41NHHq9sjurc4OWzUKrSGS-xY8GYN77Cu4Vhw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://103.179.66.114/deleteTeam/9",
+					"host": [
+						"http://103.179.66.114/deleteTeam"
+					],
+					"path": [
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Project",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://103.179.66.114/project",
+					"host": [
+						"http://103.179.66.114/project"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://103.179.66.114/",
+			"type": "string"
+		}
+	]
+}
